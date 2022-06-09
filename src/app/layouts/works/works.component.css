@@ -1,0 +1,153 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top ul li {
+    list-style: none;
+    display: inline;
+    padding: 15px;
+    font-weight: bold
+}
+
+.header__top a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.header__top {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header__top li:hover a {
+    color: rgb(250, 106, 53);
+}
+
+/* end header */
+.container__work {
+    margin-top: 50px;
+}
+
+.content__title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container-content__work {
+    margin-top: 25px;
+}
+
+.content-top__work {
+    display: grid;
+    grid-template-columns: 246px auto;
+    border-bottom: 1px ridge #E0E0E0;
+    grid-gap: 20px;
+}
+
+.content-work__blog ul li {
+    list-style: none;
+}
+
+.work__text a {
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+}
+
+.work__text2 {
+    display: flex;
+    grid-gap: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.work__text2 a:hover {
+    color: rgb(250, 106, 53);
+}
+
+.work__text2 p {
+    font-weight: bold;
+    background-color: #142850;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 30px;
+}
+
+.work__text2 a {
+    text-decoration: none;
+    color: #8695A4;
+}
+
+.work__text3 {
+    padding-top: 20px;
+}
+
+.content-center__work {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 246px auto;
+    border-bottom: 1px ridge #E0E0E0;
+    grid-gap: 20px;
+}
+
+.content-bottom__work {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 246px auto;
+    border-bottom: 1px ridge #E0E0E0;
+    grid-gap: 20px;
+}
+
+/*  container__work */
+footer {
+    width: 800px;
+    margin: auto;
+    margin-top: 90px;
+    height: 90px;
+    height: 120px;
+}
+
+.content__item {
+    display: flex;
+    justify-content: center;
+    grid-gap: 30px;
+    font-size: 35px;
+}
+
+.content__item a {
+    color: rgb(41, 41, 41);
+}
+
+.content__footter {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+#backTop {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    background-color: #777;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,1 +1,128 @@
-<p>detail-works works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works Detail</title>
+    <script src="https://kit.fontawesome.com/2929a2d643.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo__item">
+                <a href="./index.html">
+                    <img src="../img/portfolio-logo-91.webp" width="80px">
+                </a>
+            </div>
+            <!-- logo__item -->
+            <div class="header__top">
+                <ul>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- end header -->
+        <section>
+            <div class="content-top__work">
+                <div class="content-work__blog">
+                    <ul>
+                        <li class="work__text">
+                            <a href="">
+                                <h3>Designing Dashboards with <br> usability in mind</h3>
+                            </a>
+                        </li>
+                        <li class="work__text2">
+                            <p>2020</p>
+                            <a href="">Dashboard, User Experience Design</a>
+                        </li>
+                        <li class="work__text3">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
+                            consequat duis enim velit
+                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </li>
+                    </ul>
+                </div>
+                <!-- content-work__blog -->
+            </div>
+            <!-- content-top__work -->
+        </section>
+        <section class="container-bottom__content">
+            <div class="bottom__img">
+                <img src="../img/Rectangle 4.png" alt="">
+            </div>
+            <div class="heading__item">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
+                    consequat
+                    duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="bottom__img2">
+                <img src="../img/Rectangle 5.png" alt="">
+            </div>
+            <div class="heading__item">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
+                    consequat
+                    duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="bottom__img3">
+                <img src="../img/Rectangle 6.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <div class="content__item">
+                <a href="">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="content__footter">
+                <p>Copyright ©2020 All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <div id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#backTop').fadeIn();
+            } else {
+                $('#backTop').fadeOut();
+            }
+        });
+        $('#backTop').click(function () {
+            $('html , body').animate({
+                scrollTop: 0
+            }, 300);
+        });
+    });
+</script>
+
+</html>
