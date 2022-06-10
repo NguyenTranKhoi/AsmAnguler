@@ -8,6 +8,8 @@ import { BlogComponent } from './layouts/blog/blog.component';
 import { WorksComponent } from './layouts/works/works.component';
 import { DetailWorksComponent } from './layouts/detail-works/detail-works.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { DetailWorksComponent } from './layouts/detail-works/detail-works.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

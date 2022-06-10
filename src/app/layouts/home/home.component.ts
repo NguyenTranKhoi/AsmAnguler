@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { PostService } from 'src/app/service/post.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  posts!: any
+
+  constructor(private postService: PostService) { }
 
   ngOnInit(): void {
+    this.postService.getAll().subscribe(res => {
+      this.posts = res;
+    })
   }
 
 }

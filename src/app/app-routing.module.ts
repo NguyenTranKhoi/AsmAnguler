@@ -7,8 +7,8 @@ import { WorksComponent } from './layouts/works/works.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "", component: BlogComponent },
-  { path: "", component: WorksComponent },
+  { path: "blog", component: BlogComponent },
+  { path: "works", component: WorksComponent },
   { path: "", component: DetailWorksComponent },
 ];
 
