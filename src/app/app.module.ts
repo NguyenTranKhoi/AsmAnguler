@@ -9,6 +9,9 @@ import { WorksComponent } from './layouts/works/works.component';
 import { DetailWorksComponent } from './layouts/detail-works/detail-works.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ListPostComponent } from './admin/list-post/list-post.component';
+import { AddPostComponent } from './admin/add-post/add-post.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     BlogComponent,
     WorksComponent,
-    DetailWorksComponent
+    DetailWorksComponent,
+    ListPostComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

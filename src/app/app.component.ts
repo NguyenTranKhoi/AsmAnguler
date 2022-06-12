@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import mockData from 'src/data';
+import { Iposts } from './models/posts';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AsmAngular';
+  // postList: Iposts[] = mockData;
+  // onHandleAdd(post: any) {
+  //   console.log('post', post);
+  //   this.postList.push(post);
+  // }
+  // title = 'AsmAngular';
 }

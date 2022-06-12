@@ -1,0 +1,25 @@
+{{post | json}}
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="post.title" name="title">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Created</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="post.created" name="created">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">CategoryPost</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="post.category" name="category">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">ShortDes</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="post.shortdes" name="shortdes">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Description</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="post.description"
+            name="description">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

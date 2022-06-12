@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Created</th>
+            <th scope="col">CategoryPostId</th>
+            <th scope="col">ShortDescrip</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of postList; let i = index">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{post.title}}</td>
+            <td>{{post.created}}</td>
+            <td>{{post.category}}</td>
+            <td>{{post.shortdes}}</td>
+            <td>{{post.description}}</td>
+            <td>
+                <button class="btn btn-primary ms-1" routerLink="/post/edit/{{post.id}">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger ms-1" (click)="onRemovePost(post.id!)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
