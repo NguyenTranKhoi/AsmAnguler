@@ -6,6 +6,8 @@ import { HomeComponent } from './layouts/home/home.component';
 import { WorksComponent } from './layouts/works/works.component';
 import { ListPostComponent } from './admin/list-post/list-post.component';
 import { AddPostComponent } from './admin/add-post/add-post.component';
+import { ListWorkComponent } from './admin/list-work/list-work.component';
+import { AddWorkComponent } from './admin/add-work/add-work.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -18,6 +20,14 @@ const routes: Routes = [
       { path: "list", component: ListPostComponent },
       { path: "addpost", component: AddPostComponent },
       { path: "edit/:id", component: AddPostComponent },
+    ]
+  },
+  {
+    path: "work", children: [
+      { path: "", redirectTo: "listwork", pathMatch: "full" },
+      { path: "listwork", component: ListWorkComponent },
+      { path: "addwork", component: AddWorkComponent },
+      { path: "edit/:id", component: AddWorkComponent },
     ]
   }
 ];

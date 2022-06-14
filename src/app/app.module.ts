@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListPostComponent } from './admin/list-post/list-post.component';
 import { AddPostComponent } from './admin/add-post/add-post.component';
 import { FormsModule } from '@angular/forms';
+import { AddWorkComponent } from './admin/add-work/add-work.component';
+import { ListWorkComponent } from './admin/list-work/list-work.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     WorksComponent,
     DetailWorksComponent,
     ListPostComponent,
-    AddPostComponent
+    AddPostComponent,
+    AddWorkComponent,
+    ListWorkComponent
   ],
   imports: [
     BrowserModule,

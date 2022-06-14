@@ -2,7 +2,7 @@
     <header>
         <div class="logo__item">
             <a href="">
-                <img src="../img/portfolio-logo-91.webp" width="80px">
+                <img src="https://picsum.photos/100/100" width="80px">
             </a>
         </div>
         <!-- logo__item -->
@@ -26,7 +26,7 @@
         </div>
         <!-- introduce__left -->
         <div class="introduce-img__right">
-            <img src="../img/khoine.jpg" width="240px" alt="">
+            <img src="https://picsum.photos/500/500" width="240px" alt="">
         </div>
         <!-- introduce-img__right -->
     </section>
@@ -38,29 +38,25 @@
         </div>
         <!-- post__item -->
         <div class="container__content-post">
-            <div class="container-box__left">
+            <div class="container-box__left" *ngFor="let post of posts">
                 <ul class="content-item__box">
                     <li>
                         <a href="">
-                            <h3>Creating pixel perfect icons in <br> Figma</h3>
+                            <h3>{{post.title}}</h3>
                         </a>
                     </li>
                     <li class="content-item__category">
                         <div class="text1">
-                            12 Feb 2020
+                            {{post.created}}
                         </div>
                         <div class="boder1"></div>
-                        <a href="">Design, Pattern</a>
+                        <a href="">{{post.category}}</a>
                     </li>
-                    <li class="content-text__box">Amet minim mollit non deserunt ullamco est sit <br> aliqua dolor
-                        do
-                        amet sint. Velit officia
-                        consequat <br> duis enim velit
-                        mollit. Exercitation veniam <br> consequat sunt nostrud amet.</li>
+                    <li class="content-text__box">{{post.shortdes}}</li>
                 </ul>
             </div>
             <!-- container-box__left -->
-            <div class="container-box__left">
+            <!-- <div class="container-box__left">
                 <ul class="content-item__box">
                     <li>
                         <a href="">
@@ -79,7 +75,7 @@
                         consequat <br> duis enim velit
                         mollit. Exercitation veniam <br> consequat sunt nostrud amet.</li>
                 </ul>
-            </div>
+            </div> -->
             <!-- container-box__right -->
         </div>
         <!-- container__content-post -->
@@ -91,87 +87,30 @@
         </div>
         <!--content__title -->
         <div class="container-content__work">
-            <div class="content-top__work">
+            <div class="content-top__work" *ngFor="let work of works">
                 <div class="work__img">
-                    <img src="../img/Rectangle 30.jpg" alt="">
+                    <img src="https://picsum.photos/150/150" alt="">
                 </div>
                 <!-- work__img -->
                 <div class="content-work__blog">
                     <ul>
                         <li class="work__text">
                             <a href="">
-                                <h3>Designing Dashboards</h3>
+                                <h3>{{work.title}}</h3>
                             </a>
                         </li>
                         <li class="work__text2">
-                            <p>2020</p>
-                            <a href="">Dashboard</a>
+                            <p>{{work.created}}</p>
+                            <a href="">{{work.category}}</a>
                         </li>
-                        <li class="work__text3">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>
-                            officia
-                            consequat duis enim velit
-                            mollit. Exercitation veniam consequat sunt <br> nostrud amet.
+                        <li class="work__text3">{{work.shortdes}}
                         </li>
                     </ul>
                 </div>
                 <!-- content-work__blog -->
             </div>
             <!-- content-top__work -->
-            <div class="content-center__work">
-                <div class="work__img">
-                    <img src="../img/Rectangle 32.jpg" alt="">
-                </div>
-                <!-- work__img -->
-                <div class="content-work__blog">
-                    <ul>
-                        <li class="work__text">
-                            <a href="">
-                                <h3>Vibrant Portraits of 2020</h3>
-                            </a>
-                        </li>
-                        <li class="work__text2">
-                            <p>2018</p>
-                            <a href="">Illustration</a>
-                        </li>
-                        <li class="work__text3">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>
-                            officia
-                            consequat duis enim velit
-                            mollit. Exercitation veniam consequat sunt <br> nostrud amet.
-                        </li>
-                    </ul>
-                </div>
-                <!-- content-work__blog -->
-            </div>
-            <!-- content-center__work -->
-            <div class="content-bottom__work">
-                <div class="work__img">
-                    <img src="../img/Rectangle 34.jpg" alt="">
-                </div>
-                <!-- work__img -->
-                <div class="content-work__blog">
-                    <ul>
-                        <li class="work__text">
-                            <a href="">
-                                <h3>36 Days of Malayalam type</h3>
-                            </a>
-                        </li>
-                        <li class="work__text2">
-                            <p>2018</p>
-                            <a href="">Typography</a>
-                        </li>
-                        <li class="work__text3">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>
-                            officia
-                            consequat duis enim velit
-                            mollit. Exercitation veniam consequat sunt <br> nostrud amet.
-                        </li>
-                    </ul>
-                </div>
-                <!-- content-work__blog -->
-            </div>
-            <!-- content-bottom__work -->
+
         </div>
         <!-- container-content__work -->
     </section>

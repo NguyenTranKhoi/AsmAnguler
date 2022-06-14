@@ -7,6 +7,7 @@ import { Iposts } from '../models/posts';
   providedIn: 'root'
 })
 export class PostService {
+
   API_URL = "http://localhost:3002/posts";
 
   constructor(private http: HttpClient) { }
