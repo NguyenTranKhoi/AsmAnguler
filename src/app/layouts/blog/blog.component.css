@@ -1,11 +1,5 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Heebo', sans-serif;
-}
-
 .container {
-    width: 800px;
+    width: 860px;
     margin: auto;
 }
 
@@ -103,7 +97,7 @@ header {
 
 /*  container__work */
 footer {
-    width: 800px;
+    width: 860px;
     margin: auto;
     margin-top: 90px;
     height: 90px;
@@ -125,19 +119,4 @@ footer {
     text-align: center;
     font-size: 14px;
     padding-top: 20px;
-}
-
-#backTop {
-    position: fixed;
-    right: 20px;
-    bottom: 40px;
-    background-color: #777;
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

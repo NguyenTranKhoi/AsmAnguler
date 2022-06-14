@@ -24,7 +24,7 @@ export class AddPostComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const id = +this.route.snapshot.paramMap.get('id')!;
+    const id = this.route.snapshot.paramMap.get('id')!;
     if (id) {
       this.postService.getPost(id).subscribe(data => {
         this.post = data
@@ -32,18 +32,20 @@ export class AddPostComponent implements OnInit {
     }
   }
   onSubmit() {
-    const id = +this.route.snapshot.paramMap.get('id')!;
+    const id = this.route.snapshot.paramMap.get('id')!;
     if (id) {
       this.postService.updatePost(this.post).subscribe(data => {
         setTimeout(() => {
           this.router.navigateByUrl('/post');
         }, 2000)
       })
+    } else {
+      this.postService.addPost(this.post).subscribe(data => {
+        setTimeout(() => {
+          this.router.navigateByUrl('/post');
+        }, 2000)
+      });
     }
-    this.postService.addPost(this.post).subscribe(data => {
-      setTimeout(() => {
-        this.router.navigateByUrl('/post');
-      }, 2000)
-    });
+
   }
 }

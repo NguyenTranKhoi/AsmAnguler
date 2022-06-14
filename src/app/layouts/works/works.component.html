@@ -45,7 +45,7 @@
                     <div class="content-work__blog">
                         <ul>
                             <li class="work__text">
-                                <a href="./works-detail.html">
+                                <a routerLink="/detailwork">
                                     <h3>Designing Dashboards</h3>
                                 </a>
                             </li>
@@ -169,27 +169,8 @@
             </div>
         </footer>
     </div>
-    <div id="backTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop()) {
-                $('#backTop').fadeIn();
-            } else {
-                $('#backTop').fadeOut();
-            }
-        });
-        $('#backTop').click(function () {
-            $('html , body').animate({
-                scrollTop: 0
-            }, 300);
-        });
-    });
-</script>
+
 
 </html>

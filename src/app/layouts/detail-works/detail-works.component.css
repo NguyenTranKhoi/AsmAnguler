@@ -1,11 +1,5 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Heebo', sans-serif;
-}
-
 .container {
-    width: 800px;
+    width: 860px;
     margin: auto;
 }
 
@@ -120,7 +114,7 @@ header {
 
 /* end */
 footer {
-    width: 800px;
+    width: 860px;
     margin: auto;
     margin-top: 90px;
     height: 90px;

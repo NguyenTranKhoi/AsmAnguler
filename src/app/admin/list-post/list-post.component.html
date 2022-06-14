@@ -1,3 +1,4 @@
+<a class="btn btn-primary" routerLink="/post/addpost">Add</a>
 <table class="table">
     <thead>
         <tr>
@@ -18,7 +19,7 @@
             <td>{{post.shortdes}}</td>
             <td>{{post.description}}</td>
             <td>
-                <button class="btn btn-primary ms-1" routerLink="/post/edit/{{post.id}">Edit</button>
+                <button class="btn btn-primary ms-1" routerLink="/post/edit/{{ post.id }}">Edit</button>
             </td>
             <td>
                 <button class="btn btn-danger ms-1" (click)="onRemovePost(post.id!)">Remove</button>

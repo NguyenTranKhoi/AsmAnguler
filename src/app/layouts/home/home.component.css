@@ -1,11 +1,5 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Heebo', sans-serif;
-}
-
 header {
-    width: 800px;
+    width: 860px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -35,7 +29,7 @@ header {
 
 /* end header */
 .header__introduce {
-    width: 800px;
+    width: 860px;
     margin: auto;
     margin-top: 100px;
     display: grid;
@@ -70,15 +64,15 @@ header {
 .container__posts {
     margin-top: 20px;
     background-color: #EDF7FA;
-    height: 395px;
+    height: 410px;
 }
 
 .post__item {
-    width: 800px;
+    width: 860px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .post__item p {
@@ -92,14 +86,14 @@ header {
 }
 
 .container__content-post {
-    width: 800px;
+    width: 860px;
     margin: auto;
 }
 
 .container__content-post {
     display: flex;
     grid-gap: 22px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .container-box__left {
@@ -146,7 +140,7 @@ header {
 
 /* container__posts */
 .container__work {
-    width: 800px;
+    width: 860px;
     margin: auto;
     margin-top: 25px;
 }
@@ -224,7 +218,7 @@ header {
 
 /*  container__work */
 footer {
-    width: 800px;
+    width: 860px;
     margin: auto;
     margin-top: 90px;
     height: 90px;

@@ -10,7 +10,7 @@ export class PostService {
   API_URL = "http://localhost:3002/posts";
 
   constructor(private http: HttpClient) { }
-  getPost(id: number): Observable<Iposts> {
+  getPost(id: string): Observable<Iposts> {
     return this.http.get<Iposts>(`${this.API_URL}/${id}`)
   }
   getPosts(): Observable<Iposts[]> {
